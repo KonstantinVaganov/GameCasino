@@ -19,7 +19,7 @@ playing_cards = {
 }
 player_result = []
 bot_result = []
-deposit21 = 0
+
 
 def bot_choice(a=0, b=15):
     # Функция создана для уменьшения или увеличения шанса.
