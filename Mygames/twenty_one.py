@@ -19,15 +19,15 @@ playing_cards = {
 }
 player_result = []
 bot_result = []
-deposit21 = 0
+
 
 def bot_choice(a=0, b=15):
-    # Функция создана для уменьшения или увеличения шанса.
+    """ Функция создана для уменьшения или увеличения шанса. """
     return random.choice(list(range(a, b)))
 
 
 def bot_sleep():
-    # Функция для искуственного замедления выбора варианта бота
+    """ Функция для искуственного замедления выбора варианта бота """
     return sleep(random.choice(list(range(2, 5))))
 
 
@@ -54,7 +54,7 @@ def bot_rand_cards():
 
 
 def add_cards():
-    # Функция реализует раздачу карт
+    """ Функция реализует раздачу карт """
     plus_card = int(input('Желаете еще получить карту? 1 это Да, 2 это Нет '))
     print(plus_card)
     if plus_card == 1:
@@ -66,7 +66,7 @@ def add_cards():
 
 
 def bot_cards():
-    # Функция реализует выбор бота с шансом
+    """ Функция реализует выбор бота с шансом """
     bot_rand_cards()
     print('Решение продолжить')
     bot_sleep()
@@ -93,7 +93,7 @@ def bot_cards():
 
 
 def game_twentyone(player_money):
-    # Реализации игры
+    """ Реализация игры """
     print(f'На вашем счету {player_money}$')
     if player_money <= 0:
         print('К сожалению у вас закончились деньги')

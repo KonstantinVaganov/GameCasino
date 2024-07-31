@@ -7,7 +7,7 @@ result = []
 
 
 def bot_sleep():
-    # Функция для искуственного замедления выбора варианта бота
+    """ Функция для искуственного замедления выбора варианта бота """
     return sleep(random.choice(list(range(2, 5))))
 
 
@@ -16,7 +16,7 @@ def random_red_of_white():
 
 
 def game_red_or_white(player_money):
-    # Реализации игры
+    """ Реализации игры """
     print(f'На вашем счету {player_money}$')
     if player_money <= 0:
         print('К сожалению у вас закончились деньги')
