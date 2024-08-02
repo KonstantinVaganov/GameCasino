@@ -28,5 +28,5 @@ age_verification = int(input('Введите ваш возраст: '))
 if age_verification < 18:
     print('К сожалению доступ к казино закрыт!')
 else:
-    print(f'При старте выдаётся депозит в размере {start_deposit}$')
+    print(f'При старте выдаётся депозит в размере {start_deposit}$, для каждой из игры')
     game_selection()
